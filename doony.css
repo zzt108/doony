@@ -877,7 +877,10 @@ a.yuimenulabel, a.yuimenuitemlabel,
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-
+/*Job configuration*/
 .section-header{
 	font-size:150%
+}
+.dd-handle{
+	color:blue
 }
