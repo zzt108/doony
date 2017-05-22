@@ -5,6 +5,7 @@ body.yui-skin-sam,
 .yui-skin-sam td,
 .yui-skin-sam th,
 .yui-skin-sam p,
+.yui-skin-sam textarea,
 .yui-skin-sam select {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -573,7 +574,7 @@ input[type="button"].btn-block {
 }
 
 /****************     end bootstrap styles        ********************/
-pre, code, .CodeMirror, .yui-skin-sam textarea {
+pre, code, .CodeMirror {
   font-family: Consolas, Monaco, monospace;
 }
 
@@ -609,7 +610,7 @@ textarea {
 .yui-skin-sam #top-panel {
   background-url: none;
   background-image: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 
 .yui-skin-sam #top-panel img {
@@ -618,15 +619,23 @@ textarea {
 
 .yui-skin-sam #search-box {
   font-size: 16px;
+  padding: 5px 10px;
   background-image: none;
+  margin: 7px;
 }
 
 /******************* side panel styles ***********************/
+#side-panel {
+  padding-left: 15px;
+}
+
 #tasks {
   margin-top: 5px;
   font-size: 16px;
   margin-right: 30px;
   padding-left: 0;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 
 #tasks a,
@@ -640,7 +649,7 @@ textarea {
 }
 
 .task a:nth-child(n+1) {
-  padding: 10px 30px 5px 0;
+  padding: 10px 30px 10px 0;
   display: inline-block;
 }
 
@@ -692,10 +701,9 @@ textarea {
  * too.
  */
 body > pre,
-#main-panel > pre,
-.console-output {
+#main-panel > pre {
   font-size: 14px;
-  background-color: #111;
+  background-color: #000099;
   color: #eee;
   padding: 10px 10px 30px;
   border-radius: 3px;
@@ -720,6 +728,10 @@ body > pre a:visited,
 #main-panel > ul .model-link,
 #main-panel > ul li {
   padding-bottom: 7px;
+}
+
+#main-panel {
+  padding-left: 15px;
 }
 
 a.yuimenulabel, a.yuimenuitemlabel,
@@ -864,4 +876,11 @@ a.yuimenulabel, a.yuimenuitemlabel,
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+}
+/*Job configuration*/
+.section-header{
+	font-size:150%
+}
+.dd-handle{
+	color:blue
 }
